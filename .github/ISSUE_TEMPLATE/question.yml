@@ -1,0 +1,32 @@
+name: Question / Support
+description: Ask for help with usage, setup, or project behavior
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to do, and where are you blocked?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Include relevant commands, documentation, or troubleshooting already attempted.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include versions and environment details when relevant.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked the README/docs and searched existing issues.
+          required: true
+        - label: I removed secrets and other sensitive information.
+          required: true
